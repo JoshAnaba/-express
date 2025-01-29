@@ -3,7 +3,7 @@ const getPostsBtn = document.querySelector('#get-posts');
 
 const getPosts = async () => {
   try {
-    const res = await fetch('http://localhost:8080/api/posts')
+    const res = await fetch('https://express-tut.fly.dev/api/posts')
   if (!res.ok) {
     throw new Error('Failed to fetch posts');
   }
